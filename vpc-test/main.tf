@@ -7,6 +7,7 @@ module "roboshop" {
   igw_tags = var.igw_tags
   public_subnet_tags = var.public_subnet_tags
   public_subnets_cidr = var.public_subnet_cidr
-    private_subnet_tags = var.private_subnet_tags
+  private_subnet_tags = var.private_subnet_tags
   private_subnets_cidr = var.private_subnet_cidr
+  database_subnets_cidr = var.database_subnet_cidr
 }

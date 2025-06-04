@@ -37,6 +37,11 @@ variable "private_subnet_tags" {
   default = {  #optional
   }
 }
+variable "database_subnet_tags" {
+  type = map
+  default = {  #optional
+  }
+}
 variable "public_subnets_cidr" {
   type = list
   #default = ["10.0.1.0/24","10.0.2.0/24" ]
@@ -47,9 +52,17 @@ variable "public_subnets_cidr" {
 }
 variable "private_subnets_cidr" {
   type = list
-  #default = ["10.0.3.0/24","10.0.4.0/24" ]
+  #default = ["10.0.11.0/24","10.0.12.0/24" ]
   validation {
     condition = length(var.private_subnets_cidr)==2
     error_message = "Please give 2 private valid subnet cidr"
+  }
+}
+variable "database_subnets_cidr" {
+  type = list
+  #default = ["10.0.21.0/24","10.0.22.0/24" ]
+  validation {
+    condition = length(var.database_subnets_cidr)==2
+    error_message = "Please give 2 database valid subnet cidr"
   }
 }
