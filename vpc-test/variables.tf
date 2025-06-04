@@ -72,3 +72,12 @@ variable "database_route_table_tags" {
   default = {  #optional
   }
 }
+variable "vpc_peering_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "is_peering_required" { #in module we gave false
+  type = bool
+  default=true
+}

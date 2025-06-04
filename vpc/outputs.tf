@@ -37,5 +37,13 @@ output "private-route-table-id" {
 output "database-route-table-id" {
   value = aws_route_table.database.id
 }
-
+output "default-vpc-id" {
+  value = data.aws_vpc.default.id
+}
+output "default-vpc-cidr-block" {
+  value = data.aws_vpc.default.cidr_block
+}
+output "vpc-peering-id" {
+  value = aws_vpc_peering_connection.roboshop-default[0].id
+}
 

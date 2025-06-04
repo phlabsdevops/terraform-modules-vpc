@@ -38,3 +38,12 @@ output "private-route-table-id" {
 output "database-route-table-id" {
   value = module.roboshop.database-route-table-id
 }
+output "default-vpc-id" {
+  value = module.roboshop.default-vpc-id
+}
+output "vpc-peering-id" {
+  value = module.roboshop.vpc-peering-id
+}
+output "default-vpc-cidr-block" {
+  value = module.roboshop.default-vpc-cidr-block
+}
