@@ -66,3 +66,23 @@ variable "database_subnets_cidr" {
     error_message = "Please give 2 database valid subnet cidr"
   }
 }
+variable "ngw_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "public_route_table_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "private_route_table_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "database_route_table_tags" {
+  type = map
+  default = {  #optional
+  }
+}

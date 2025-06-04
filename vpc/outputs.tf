@@ -25,4 +25,17 @@ output "vpc-id" {
 output "igw-id" {
   value = aws_internet_gateway.gw.id
 }
+output "ngw-id" {
+  value = aws_nat_gateway.ngw.id
+}
+output "public-route-table-id" {
+  value = aws_route_table.public.id
+}
+output "private-route-table-id" {
+  value = aws_route_table.private.id
+}
+output "database-route-table-id" {
+  value = aws_route_table.database.id
+}
+
 

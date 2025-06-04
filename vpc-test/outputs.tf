@@ -19,9 +19,22 @@ output "database-subnet-id-1" {
 output "database-subnet-id-2" {
   value = module.roboshop.database-subnet-id-2
 }
+
 output "vpc-id" {
   value = module.roboshop.vpc-id
 }
 output "igw-id" {
   value = module.roboshop.igw-id
+}
+output "ngw-id" {
+  value = module.roboshop.ngw-id
+}
+output "public-route-table-id" {
+  value = module.roboshop.public-route-table-id
+}
+output "private-route-table-id" {
+  value = module.roboshop.private-route-table-id
+}
+output "database-route-table-id" {
+  value = module.roboshop.database-route-table-id
 }

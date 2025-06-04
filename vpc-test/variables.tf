@@ -52,3 +52,23 @@ variable "database_subnet_cidr" {
   type=list
   default = ["10.0.21.0/24","10.0.22.0/24" ]
 }
+variable "ngw_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "public_route_table_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "private_route_table_tags" {
+  type = map
+  default = {  #optional
+  }
+}
+variable "database_route_table_tags" {
+  type = map
+  default = {  #optional
+  }
+}
